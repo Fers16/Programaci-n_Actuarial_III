@@ -1,0 +1,68 @@
+---
+title: "Historial_Academico"
+author: "Fernanda Zurita"
+date: "10 de febrero de 2017"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Calificaciones de la carrera
+## Primer Semestre
+
+- Programación Actuarial I "5"
+- Introducción a la profesion Actuarial "5"
+- Matemáticas Básicas "5"
+- Problemas de Matemáticas Básicas "5"
+- DHPC "9"
+- Conceptos de Cálculo "5"
+
+## Segundo Semestre
+
+- Formación Humana y Social "9"
+- Conceptos de cálculo "7"
+- Matremáticas Básicas "7"
+- Problemas de Matemáticas Básicas "7"
+
+## Tercer Semestre
+
+- Programación Actuarial I "5"
+- Teoría del Interés I "9"
+- Microeconomía "7"
+- Cálculo Diferencial en una Variable "7"
+- Teoría de Ecuaciones "5"
+
+## Cuarto Semestre
+
+- Programación Actuarial I "9"
+- Teoría del Interés II "9"
+- Contabilidad General "9"
+- Macroeconomía "8"
+- Cálculo Integral en una Variable "5"
+
+## Quinto Semestre
+
+- Programación Actuarial II "7"
+- Sistema Financiero Mexicano "9"
+- Introducción a la profesión Actuarial "6"
+- Cálculo Integral en una variable "5"
+- Teoría de ecuaciones "7"
+
+## Materias en curso 
+
+- Álgebra Lineal I
+- Cálculo Integral en una variable 
+- Introducción a las estructuras algebraicas
+- Programación Actuarial III
+- Geometría Analítica
+
+
+
+
+
+`
