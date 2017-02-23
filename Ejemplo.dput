@@ -1,0 +1,133 @@
+# Clase Jueves 16/febrero/2017
+x<-1
+print(x)
+#Impresión explícita >>>>>> print(x)
+x
+#Ctrl+L Limpia la consola
+msg<-"Hola"
+msg
+X <- #Esta expresión está incompleta
+msgl1
+msgl2
+msgl3
+...
+x<-1:20
+x
+x<-1:50
+x
+#R tiene 5 clases básicas o atómicas de objetos
+#(Character)CARACTERES: Todo con letra, número y sìmbolos
+#(Numeric) Números reales
+#(Complex) Números complejos
+#(Integer) Enteros
+#(Booleanos) Logical
+a<-1
+e<-1L
+#Creación de vectores
+#Con la función vector
+mi_vector<-vector("integer",5)
+#Con la función c
+x1<- c(0.5,0.6)
+x2<-c(TRUE,FALSE)
+x3<-c(T,F)
+X4<-c ("a","b","c")
+x5<-9:29
+x6<-c(2-1i,3-5i,14-1.186i)
+y<-c(1.7,"a")
+y<-c(TRUE,2)
+y<-c("a",TRUE)
+## Los objetos se pueden coaccionar de una clase a otra cuando se usan
+#las funciones as*
+#En el vector la clase que dominará es la de caracteres
+z<-0:6
+z<-(0.6,0.5)
+w<-c(0.3,1.6,3.333)
+#Ahora
+x<-c("a","b","c")
+as.numeric(x)
+as.logical(x)
+as.complex(x)
+w<-c(0.3,1.6,3.333)
+as.integer(w)
+q<-c(9.9999,5.9999)
+as.integer(q)
+#Las listas son un tipo especil dew vector que contienen elemendos 
+#de diferentes clases
+x<-list(1,"a",TRUE,1+4i)
+x
+y<-list(2,"b",FALSE,0:100)
+y
+m<-matrix(nrow = 2,ncol = 3)
+m
+dim(m)
+attributes(m)
+attributes(matrix(1:100,10,10))
+m<-matrix(1:6,nrow = 2,ncol = 3)
+m
+attributes(matrix(1:6,byrow = FALSE))
+m<-matrix(1:100,10,10,byrow = TRUE)
+m
+z<-1:10
+z
+#Ahora le asignamos a z el valor de la dimensión
+dim(z)<-c(2,5)
+z
+dim(z)<-c(5,2)
+z
+x<-1:3
+y<-10:12
+cbind(x,y)
+rbind(x,y)
+##Qué pasaría si no tienen el número de elementos
+a<-1:4
+b<-5:10
+cbind(a,b)
+rbind(a,b)
+##Funciona pero marca error
+
+x<-factor(c("yes","yes","no","yes","no"))
+x
+table(x)
+unclass(x)
+x<-factor(c("yes","yes","no","yes","no"),
+          levels=c("yes","no"))
+x
+#CLASE DEL MARTES 21 DE FEBRERO 2017
+#Faltan notas anteriores
+x<- data.frame(foo=1:4, bar=c(T,T,F,T))
+X
+nrow(x)
+ncol(x)
+x <-1:3
+names(x)
+names(x) <- c("henry","jessy","elsy")
+names(x)
+y <-1:6
+y
+dim(y) <-c(2,3)
+y
+#Funciones principales para leer datos en R
+#read.table, leer archivos de excel, pags de internet
+##bases datos, access 
+#// read.csv para leer arvhivos separados por comas (yahoo finance)
+#readLines de internet
+#source para llamar otra subrutina que ya programé
+#dget
+#ESCRITURA DE DATOS
+#write.table / writeLines etc
+
+########JUEVES#######
+y<-data.frame(a=1,b="a")
+dput(y)
+dput(y,"Y.R")
+dget("y.R")
+y <-dget("y.R")
+#Vemos source y dunmp
+x<- "Programación Actuarial III"
+y<-data.frame(a=1,b="a")
+dump(c("x","y"),file="data.R")
+source("data.R")
+
+
+
+
